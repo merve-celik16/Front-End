@@ -1,0 +1,307 @@
+.navbar {
+  height: 54px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030; /* Ensure navbar stays on top */
+}
+
+.logo {
+  margin-left: 192px;
+}
+
+.navbar-collapse.d-flex.justify-content-center.ml-5 {
+  margin-left: 5rem !important;
+}
+
+.form-control.mr-sm-2.empty {
+  background-image: url("assets/search.png");
+  background-repeat: no-repeat;
+  background-position: 9px center; /* Adjust position as needed */
+  padding-left: 30px; /* Add padding to accommodate search icon */
+}
+
+.navbar-nav {
+  margin-left: auto;
+  margin-top: 2rem;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+      display: none;
+  }
+}
+
+.middlearea {
+  max-height: 200px !important;
+}
+
+.col-lg-6.col-md-8.col-sm-10.col-xs-12 {
+  flex: 0 0 100%; /* Default to full width */
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .col-lg-6.col-md-8.col-sm-10.col-xs-12 {
+      flex: 0 0 50%; /* Adjust for larger screens */
+      max-width: 50%;
+  }
+}
+
+
+.storyphoto {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 3px solid #fff; /* White border */
+}
+
+.storytext {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 12px;
+  white-space: nowrap; /* Prevent text from wrapping */
+  text-overflow: ellipsis; /* Add ellipsis if text overflows */
+  overflow: hidden; /* Hide overflowing text */
+  max-width: 100%; /* Limit text width */
+}
+
+.card-header {
+  background-color: white;
+}
+
+.card-footer {
+  background-color: white;
+}
+
+.card-footer span:first-child {
+  margin-left: -4px;
+}
+
+.card-footer span:last-child {
+  float: right;
+  color: #0095f6;
+  opacity: 50%;
+}
+
+.rightpanel {
+  background-color: white;
+  border: none;
+  width: 25rem !important; /* Adjusted width */
+}
+
+#sticky-sidebar {
+  position: sticky;
+  top: 54px; /* Adjust top value to match navbar height */
+  height: fit-content;
+
+}
+
+.rightpanel a span.postuserfont {
+  margin-right: auto; /* Push the span to the left */
+}
+
+.rightpanel a span.postuserfont:last-child {
+  margin-left: auto; /* Push the last span to the right */
+  margin-right: 0;
+}
+
+.rightpanellinks {
+  color: lightgray;
+}
+
+.postuserfont {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.postuserfont strong {
+  font-size: 14px;
+}
+
+
+.row {
+  margin-top: 70px;
+}
+
+
+
+::placeholder {
+  text-align: center;
+  font-size: 14px;
+  color: #a8aaac;
+  background-position: 40%;
+  background-size: 6%;
+  background-image: url("../assets/search-solid.svg");
+  background-repeat: no-repeat;
+  padding-left: 15px;
+}
+
+input.empty {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  background-color: #fafafa;
+}
+
+.postuserfont {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+.middlearea {
+  max-height: 200px !important;
+}
+
+.storyphoto {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid rgb(238, 39, 82);
+  margin-right: 7px;
+}
+
+.postuserfont {
+  font-size: 14px;
+  color: #262626;
+}
+
+.storytext {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+  color: #8e8e8e;
+  word-wrap: normal;
+}
+
+.rightpanellinks {
+  text-decoration: none;
+  color: #c7c7c7;
+}
+
+.rightpanellinks:hover {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.rightpanel {
+  background-color: #fafafa;
+}
+
+.fa-ellipsis-h {
+  float: right;
+  padding-top: 10px;
+}
+
+.card-header,
+.card-footer {
+  background-color: #ffffff;
+}
+
+#sticky-sidebar {
+  position: fixed;
+  overflow-x: hidden;
+}
+
+.card .mt-4 {
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.col-3 {
+  background-color: #fafafa;
+}
+
+.content {
+  color: #262626;
+  font-size: 14px;
+}
+
+.card-body {
+  padding-bottom: 8px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .logo {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 250px) {
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  .navbar-brand {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (min-width: 1101px) {
+  .navbar-nav {
+    margin-left: 230px;
+  }
+
+
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 1102px) {
+  .navbar-nav {
+    margin-left: 110px;
+  }
+
+  .navbar-brand {
+    margin-left: 70px;
+  }
+
+}
+
+@media only screen and (min-width: 1400px) {
+  .navbar-brand {
+    margin-left: 100px;
+  }
+
+  .navbar-nav {
+    margin-left: 130px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .navbar-brand {
+    margin-left: 180px;
+  }
+
+  .navbar-nav {
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .navbar-brand {
+    margin-left: 230px;
+  }
+
+  .navbar-nav {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .navbar-brand {
+    margin-left: 280px;
+  }
+
+  .navbar-nav {
+    margin-left: -60px;
+  }
+}
