@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Web Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-200">
+
+  <!-- Navbar -->
+  <header class="bg-gray-100">
+    <div class="container mx-auto flex items-center justify-between py-4 px-6">
+      
+    
+
+      <header class="flex items-center justify-between px-6 py-4">
+        <!-- Navbar (Sola) -->
+          <!-- Desktop Navigation Menu -->
+          <nav class="hidden md:flex space-x-4">
+            <a
+              href="#"
+              class="text-gray-600 pb-3 border-b-2 border-gray-200 hover:border-purple-600 transition-all duration-300"
+              >Link1</a
+            >
+            <a
+              href="#"
+              class="text-gray-600 pb-3 border-b-2 border-gray-200 hover:border-purple-600 transition-all duration-300"
+              >Link2</a
+            >
+            <a
+              href="#"
+              class="text-gray-600 pb-3 border-b-2 border-gray-200 hover:border-purple-600 transition-all duration-300"
+              >Link3</a
+            >
+          </nav>
+      
+        <!-- Logo (Ortaya) -->
+        <div class="absolute left-1/2 transform -translate-x-1/2">
+          <span class="text-purple-600 text-3xl font-bold">ℂ</span>
+        </div>
+      </header>
+      
+      <!-- Search and Button -->
+      <div class="flex items-center space-x-4">
+        <input type="text" placeholder="Search!" class="border rounded-lg px-3 py-1 text-sm focus:outline-none">
+        <button class="bg-purple-600 text-white py-2 px-4 rounded-lg">Log in</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex flex-col items-center justify-center text-center h-screen px-6">
+    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+      Quisquam necessita<br>
+      <span class="text-purple-600">vel laborum<br>doloribus</span> delectus
+    </h1>
+    <p class="text-gray-600 text-lg mb-8">
+      Cupiditate minima voluptate temporibus quia?<br>
+      Architecto beatae esse ab amet vero eaque explicabo!
+    </p>
+    <div class="flex space-x-4">
+      <button class="bg-purple-600 text-white py-2 px-6 rounded-lg">Get started</button>
+      <a href="#" class="text-gray-800 font-medium hover:text-purple-600">Learn more</a>
+    </div>
+  </main>
+
+  <!--Kartlar-->
+  <section class="bg-gray-100 py-12">
+    <div class="container mx-auto text-center mb-12">
+      <h2 class="text-2xl md:text-3xl font-semibold text-gray-800">What our customers are saying about us</h2>
+    </div>
+  
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 px-6">
+      <!-- Testimonial Kart 1 -->
+      <div class="bg-white rounded-lg shadow-lg p-4 max-w-xs mx-auto flex flex-col items-center">
+        <div class="text-purple-600 text-3xl mb-4">&#10077;</div>
+        <p class="text-gray-600 text-center mb-4 italic">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.
+          </p>
+          
+        <div class="text-purple-600 text-3xl mb-4">&#10078;</div>
+        <div class="bg-purple-600 w-full h-10 flex items-center justify-center">
+          <div class="bg-gray-200 rounded-full p-1 -mt-6">
+            <img src="">
+          </div>
+        </div>
+        <h3 class="text-gray-900 font-bold mt-2 text-lg">Distinctio Animi</h3>
+        <p class="text-gray-500 text-xs">ALIQUM ILLUM</p>
+      </div>
+  
+      <!-- Diğer Kartları Buraya Ekleyebilirsin -->
+      <div class="bg-white rounded-lg shadow-lg p-4 max-w-xs mx-auto flex flex-col items-center">
+        <div class="text-purple-600 text-3xl mb-4">&#10077;</div>
+        <p class="text-gray-600 text-center mb-4 italic">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.
+          </p>
+          
+        <div class="text-purple-600 text-3xl mb-4">&#10078;</div>
+        <div class="bg-purple-600 w-full h-10 flex items-center justify-center">
+          <div class="bg-gray-200 rounded-full p-1 -mt-6">
+            <img src="" alt="" class="rounded-full">
+          </div>
+        </div>
+        <h3 class="text-gray-900 font-bold mt-2 text-lg">Distinctio Animi</h3>
+        <p class="text-gray-500 text-xs">ALIQUM ILLUM</p>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-lg p-4 max-w-xs mx-auto flex flex-col items-center">
+        <div class="text-purple-600 text-3xl mb-4">&#10077;</div>
+        <p class="text-gray-600 text-center mb-4 italic">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.
+          </p>
+          
+        <div class="text-purple-600 text-3xl mb-4">&#10078;</div>
+        <div class="bg-purple-600 w-full h-10 flex items-center justify-center">
+          <div class="bg-gray-200 rounded-full p-1 -mt-6">
+            <img src="" alt="" class="rounded-full">
+          </div>
+        </div>
+        <h3 class="text-gray-900 font-bold mt-2 text-lg">Distinctio Animi</h3>
+        <p class="text-gray-500 text-xs">ALIQUM ILLUM</p>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-lg p-4 max-w-xs mx-auto flex flex-col items-center">
+        <div class="text-purple-600 text-3xl mb-4">&#10077;</div>
+        <p class="text-gray-600 text-center mb-4 italic">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.
+          </p>
+          
+        <div class="text-purple-600 text-3xl mb-4">&#10078;</div>
+        <div class="bg-purple-600 w-full h-10 flex items-center justify-center">
+          <div class="bg-gray-200 rounded-full p-1 -mt-6">
+            <img src="" alt="" class="rounded-full">
+          </div>
+        </div>
+        <h3 class="text-gray-900 font-bold mt-2 text-lg">Distinctio Animi</h3>
+        <p class="text-gray-500 text-xs">ALIQUM ILLUM</p>
+      </div>
+   
+    </div>
+  </section>
+  
+
+  <!--Contact Us-->
+
+  <section class="bg-gray-200 py-12">
+    <div class="container mx-auto flex justify-center">
+      <div class="bg-white w-full max-w-md rounded-lg shadow-lg p-8">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-6">Contact us</h2>
+  
+        <!-- Name Field -->
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+        </div>
+  
+        <!-- Email Field -->
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+          <input type="email" id="email" placeholder="Your email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+        </div>
+  
+        <!-- Message Field -->
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
+          <textarea id="message" placeholder="Message..." class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"></textarea>
+        </div>
+  
+        <!-- Submit Button -->
+        <button class="w-full bg-purple-600 text-white font-semibold py-2 rounded-lg hover:bg-purple-700">Send</button>
+      </div>
+    </div>
+  
+    <!-- Footer Links and Social Media Icons -->
+    <div class="container mx-auto flex justify-between items-center mt-12">
+  
+        <!-- Navigation Links (Sola) -->
+        <div>
+          <ul class="flex space-x-6 text-gray-700">
+            <li><a href="#" class="hover:text-purple-600">Shop</a></li>
+            <li><a href="#" class="hover:text-purple-600">About</a></li>
+            <li><a href="#" class="hover:text-purple-600">Blog</a></li>
+            <li><a href="#" class="hover:text-purple-600">Pricing</a></li>
+            <li><a href="#" class="hover:text-purple-600">Contact</a></li>
+          </ul>
+        </div>
+      
+        <!-- Social Media Icons (Sağa) -->
+        <div class="flex space-x-4 text-purple-300">
+          <a href="#" class="bg-purple-700 p-2 rounded-full shadow hover:bg-purple-100">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="bg-purple-700 p-2 rounded-full shadow hover:bg-purple-100">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" class="bg-purple-700 p-2 rounded-full shadow hover:bg-purple-100">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      
+      </div>
+      
+  </section>
+  
+  <footer class="bg-purple-500 p-2 rounded-full text-center">2025 Merve ÇELİK</footer>
+
+</body>
+</html>
