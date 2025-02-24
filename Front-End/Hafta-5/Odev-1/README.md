@@ -45,15 +45,4 @@ Kullanıcının adını alarak hoş geldin mesajı gösterir ve gerçek zamanlı
 
   * JavaScript (Vanilla JS) ⚡
 
-## 🛠 Kurulum ve Kullanım
 
-Bu projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları takip edebilirsiniz:
-
-1️⃣ Depoyu Klonlayın
-
-git clone https://github.com/kullaniciadi/javascript-saat-projesi.git
-
-2️⃣ Tarayıcıda Açın
-
-
-Projeyi açmak için``  index.html  ``dosyasını çift tıklayarak tarayıcınızda görüntüleyebilirsiniz.
