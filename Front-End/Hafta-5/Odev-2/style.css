@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(to bottom, yellow 50%, red 50%);
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding-top: 10px;
+    height: 100vh; /* Sayfanın tamamına yayılmasını sağlar */
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* İçerikleri ortalar */
+    justify-content: center;
+    height: 100vh;
+}
+
+img {
+    max-width: 30%;
+    height: auto;
+    margin-bottom: 20px; /* Resmin altına boşluk bırakır */
+}
+
+.button-container {
+    display: flex;
+    gap: 15px; /* Butonlar arasına boşluk bırakır */
+}
+
+button {
+    padding: 20px 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button:hover {
+    background-color: darkgray; /* Üzerine gelindiğinde arka plan rengi değişimi */
+}
+footer{
+    background-color: yellow; /* Footer arka plan rengi sarı */
+    color: black;
+    font-weight: bold;
+    text-align: center; /* Metni ortalar */
+    padding: 10px 0; /* Üst ve alt boşluk bırakır */
+    position: relative; /* Konumlandırma ayarı */
+    bottom: 0; /* Sayfanın en altına yerleştirir */
+    width: 100%; /* Footer'ın genişliğini %100 yapar */
+}
