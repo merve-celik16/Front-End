@@ -1,0 +1,1074 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  body, html {
+    height: 100%;
+    width: 100%; /* Tam genişlik */
+  }
+  
+  html {
+    scroll-behavior: smooth; /* Yumuşak kaydırma efekti */
+  }
+  
+  /* HEADER SECTION */ 
+  
+  #home {
+    width: 100%;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Navbar başlangıçta transparan */
+  .transparent {
+    background-color: rgba(53, 85, 146, 0.7); /* Tamamen saydam değil, hafif bir renk verir */
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+  }
+  
+  /* Scroll olduğunda mavi olacak */
+  .scroll {
+    background-color: black; /* Navbar mavi olacak */
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+  }
+  
+  .nav-scroll {
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 20px;
+    position: fixed;
+    width: 100%;
+  }
+  
+  /* Navbar içindeki logo ve menü düzeni */
+  .nav-div-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  /* Menü yapısı */
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+  }
+  
+  .nav-ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-ul a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-ul a:hover {
+    color: orange;
+  }
+  
+  /* Buton stilleri */
+  .button {
+    padding: 10px 15px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: orange;
+  }
+  
+  /* İçerik bölümü stili */
+  .content-container {
+    background-image: url('../public/images/hero-man.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+  }
+  
+  .content-container-text {
+    padding: 200px 0;
+    width: 60%;
+    margin: 0 auto;
+    color: white;
+    margin-bottom: 30px;
+  }
+  
+  .content-container h3 {
+    background-color: #101111b4;
+  }
+  
+  .content-container h1 {
+    display: inline;
+    margin-top: 22px;
+    padding: 8px 10px;
+    background-color: #355592;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  
+  .content-container h2 {
+    font-size: 70px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .content-container h3 {
+    margin-bottom: 10px;
+  }
+  
+  .content-container p {
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    gap: 30px;
+    margin-top: 30px;
+    width: 60%;
+  }
+  
+  .button-1 {
+    background-color: #355592;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .button-1:hover {
+    background-color: #2a4173;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  .button-2 {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .button-2:hover {
+    background-color: rgba(53, 85, 146, 0.1);
+    color: white;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  /* 576 px için görünüm */ 
+  @media (max-width: 576px) {
+  
+    /* Hamburger menü simgesinin görünümü */
+    .hamburger {
+      display: flex; /* Hamburger simgesini göster */
+      cursor: pointer; /* İmleci göster */
+  }
+  
+  /* Navbar listesinin ayarları */
+  .nav-ul {
+      display: none; /* Varsayılan olarak gizle */
+      flex-direction: column; /* Dikey dizilim */
+      position: absolute; /* Mutlak konumlandırma */
+      top: 60px; /* Navbarın hemen altında */
+      left: 0; /* Soldan başla */
+      width: 100%; /* Tam genişlik */
+      background-color: rgba(53, 85, 146, 0.8); 
+      z-index: 999; /* Üstte kalmasını sağla */
+      padding: 10px 0; /* Üst ve alt boşluk */
+      margin-top: 20px;
+  }
+  
+  /* Menü açıldığında görünür olacak ayar */
+  .nav-ul.active {
+      display: flex; /* Aktif olduğunda göster */
+  }
+  
+  /* Menü öğeleri için ayarlar */
+  .nav-ul li {
+      margin: 10px 0; /* Liste elemanları arasında boşluk */
+      text-align: center; /* Metin ortalanır */
+  }
+  
+  /* Bağlantı ayarları */
+  .nav-ul a {
+      color: white; /* Yazı rengi beyaz */
+      text-decoration: none; /* Alt çizgi kaldırılır */
+      padding: 10px 15px; /* İçerik için boşluk */
+      display: block; /* Tüm alanı kapsar */
+  }
+  
+  .content-container-text {
+    padding: 10px; 
+    width: 100%; /* Tam genişlik sağlamak için */
+    margin: 10px; /* Margin kaldırıldı */
+    color: white;
+    margin-bottom: 30px;
+  }
+    .content-container h1,
+    .content-container h2,
+    .content-container h3 {
+        text-align: left; /* Başlıkları sola hizala */
+        margin: 0; /* Başlıkların altına boşluk ekle */
+        width: 100%;
+    }
+  
+    .button-container {
+      gap: 30px;
+      margin-top: 30px;
+      width: 100%; /* Tam genişlik sağlamak için */
+  }
+  
+  .button-1, .button-2 {
+    width: 100%; /* Tam genişlik sağlamak için */
+    margin: 0; /* Margin kaldırıldı */
+    padding: 10px 0; /* İsteğe bağlı: sadece dikey padding */
+  }
+  
+  }
+  
+  /* MINI CARDS SECTION */
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 100%; /* Tüm sayfayı kaplayacak */
+    margin: 0 auto; /* Ortalamak için */
+    background-color: rgb(237, 243, 250); /* Arka plan rengi */
+    padding: 20px; /* Üst ve alttan boşluk */
+    
+  }
+  
+  .card {
+    background-color: #fff; /* Kartların içi beyaz */
+    padding: 20px;
+    margin: 15px;
+    width: 200px; /* Kart genişliği */
+    height: 100px; /* Kart yüksekliği */
+    text-align: center;
+    background-color: white; /* Kart arka planı açık mavi */
+    font-size: 18px; /* Yazı boyutu */    
+  }
+  
+  .card h2 {
+  color:#355592;
+  padding-bottom: 6px;
+  }
+  
+  .card h4 {
+  color: black;
+  }
+  
+  /* 576px altında kartların alt alta görünmesi için */
+  @media (max-width: 576px) {
+  .card-container {
+      flex-direction: column; /* Kartları dikey olarak hizala */
+      align-items: center; /* Kartları ortala */
+      padding: 10px 0; /* Üst ve alttan daha az boşluk */
+  }
+  
+  .card {
+      
+      max-width: 80%; /* Kartların maksimum genişliği %90 */
+      margin: 10px 0; /* Yalnızca üst ve alt boşluk bırak */
+      padding: 20px; /* Kart içi boşluk */
+  }
+  }
+  
+  /* OUR CLASSES SECTION */
+  .polygon {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 60%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 25% 100%, 12.5% 50%);
+  background: #eeebeb;
+  }
+  
+  .line {
+  width: 5%; /* Genişlik oranını ayarlayın (örn. %50) */
+  margin: 0 auto; /* Ortalamak için */
+  border: none; /* Varsayılan kenarlığı kaldırmak için */
+  border-top: 5px solid orange; /* Çizgi rengi ve kalınlığı */
+  border-radius: 4px;
+  }
+  
+  .classes-buttons {
+  text-align: center;
+  justify-content: center;
+  margin: 20px 5px;
+  display: flex;
+  gap: 100px;
+  }
+  
+  .classes-buttons a {
+  margin: 0 10px;
+  text-decoration: none;
+  background-color: #355592;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 2px;
+  font-weight: bold;
+  }
+  
+  .classes-buttons a:hover {
+  background-color: orange; /* Hover durumunda arka plan rengi */
+  border: 5px solid organge;
+  clip-path: polygon(0% 0%, 100% 0%, 99% 89%, 63% 91%, 52% 100%, 42% 90%, 0 90%); /* Clippy şekli */
+  }
+  
+  .content-section {
+  display: flex;
+  justify-content: center; /* Yatayda ortalar */
+  align-items: center;
+  padding: 40px;
+  width: 100%; /* Container genişliğini tam sayfa yapar */
+  max-width: 1200px; /* Genişliğini sınırlamak  */
+  margin: 0 auto; 
+  
+  }
+  
+  .left-column {
+  width: 10%;
+  flex: 1; /* Soldaki alanın esnek genişlemesini sağlar */
+  padding-right: 20px; 
+  padding-left: 150px;
+  }
+  
+  .right-column {
+  width: 40%;
+  text-align: center;
+  max-width: 600px; /* Görsel boyutunu küçültür */
+  height: auto; 
+  padding-top: 15px;
+  }
+  
+  
+  .left-column h2, .left-column p {
+  color: rgb(96, 96, 96);
+  padding: 5px;
+  padding-bottom: 10px;
+  }
+  
+  .left-column p:first-of-type {
+  max-width: 400px; /* Maksimum genişlik */
+  line-height: 1.5; /* Satırlar arasındaki boşluğu artırmak için */
+  }
+  
+  .right-column img {
+  max-width: 100%;
+  height: auto;
+  padding-right: 50px;
+  margin-right: 50px;
+  }
+  
+  /* 576 px Responsive düzenlemeler */
+  @media (max-width: 576px) {
+  .polygon {
+    width: 100%; /* Tam genişlikte kaplasın */
+    height: 170%; /* Yüksekliği ekran boyutuna göre ayarlayın */
+    clip-path: polygon(40% 0, 100% 0%, 100% 100%, 66% 100%); /* Polygonun şekli */
+  }
+  
+  .section-title {
+    text-align: center; /* Başlık ve paragrafları ortala */
+    padding: 20px; /* Üst ve alt boşluk ver */
+  }
+  
+  .classes-buttons {
+    display: flex; /* Flex kullanarak yerleştir */
+    flex-wrap: wrap; /* Satırların alt alta gelmesini sağla */
+    justify-content: center; /* Butonları ortala */
+    gap: 20px; /* Butonlar arasındaki boşluk */
+    
+  }
+  
+  .classes-buttons a {
+    flex: 0 1 calc(35% - 20px); /* İki buton yan yana, kenar boşluğunu çıkar */
+    padding: 8px; /* Buton padding */
+    margin: 0; 
+    text-align: center; /* Metni ortala */
+  }
+  
+  .content-section {
+    flex-direction: column; /* İçerikleri dikey hizala */
+    padding: 20px; /* Dikey padding */
+    
+  }
+  
+  .left-column, .right-column {
+    width: 100%; /* Her iki sütun tam genişlikte olacak */
+    padding: 10px; /* İçeriklere biraz boşluk ekle */
+  }
+  
+  .right-column img {
+    width: 100%; /* Resmi tam genişlikte yap */
+    height: auto; /* Yükseklik otomatik */
+    margin: 0; /* Kenar boşluğunu kaldır */
+    padding: 0;
+    
+  }
+  }
+  
+  /* BMI SECTION */
+  .bmi {
+  display: flex;
+  justify-content: center; /* Yatayda ortalar */
+  align-items: center;
+  padding: 40px;
+  width: 100%; /* Container genişliğini tam sayfa yapar */
+  max-width: 1200px; 
+  margin: 0 auto; /* Sayfanın ortasında kalmasını sağlar */
+  margin-top: 100px;
+  }
+  
+  /* BMI Calculator kısmı */
+  .bmi-calculator {
+  flex: 1; /* Sol tarafta kalsın */
+  max-width: 40%; /* Genişliğini artırın */
+  margin-right: 20px; /* Sağdan boşluk bırakın */
+  }
+  
+  .bmi-calculator h2 {
+  color:#355592;
+  padding-bottom: 20px;
+  }
+  
+  .bmi-calculator p {
+  color:#555353;
+  padding-bottom: 20px;
+  }
+  
+  .bmi-calculator input {
+  width: 40%;
+  }
+  .bmi-calculator span {
+  font-size: 14px;
+  color:#555353;
+  }
+  /* Sonuç Container */
+  .result-container {
+  position: relative;
+  flex: 1; /* Sağ tarafa yerleştir */
+  max-width: 40%; /* Genişliği artırın */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ortalansın */
+  }
+  
+  .result-container h4 {
+  color:#555353;
+  padding-bottom: 10px;
+  }
+  
+  /* BMI Image */
+  #bmi-image {
+  width: 100%;
+  max-width: 400px; /* Görsel boyutunu sınırlayın */
+  }
+  
+  /* BMI Indicator (Ok) */
+  #bmi-indicator {
+  position: absolute;
+  bottom: -20px; /* Görselin altına hizalama */
+  left: 85%; /* Başlangıçta sağda */
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid orange; /* Ok rengi */
+  transition: left 0.5s ease; /* Kayma animasyonu */
+  
+  }
+  
+  /* 576px ve altındaki ekranlar için stil ayarlamaları */
+  @media (max-width: 576px) {
+  .bmi {
+    flex-direction: column; /* Dikey düzen */
+    align-items: flex-start; /* Sol tarafa hizala */
+  }
+  
+  .bmi-calculator,
+  .result-container {
+    max-width: 100%; /* Genişliği %100 yap */
+    margin-right: 0; /* Sağdan boşluğu kaldır */
+    margin-bottom: 20px; /* Aşağı boşluk ekle */
+  }
+  
+  .bmi-calculator input {
+    width: 50%; /* Input genişliğini %100 yap */
+    margin-right: 0; /* Sağdan boşluğu kaldır */
+    margin-bottom: 10px; /* Aşağıda boşluk ekle */
+  }
+  
+  .bmi-calculator span {
+    
+    margin-left: 0; /* Sol boşluğu kaldır */
+    font-size: 14px; 
+  }
+  
+  /* Ok konumlandırma ayarları */
+  #bmi-indicator {
+    left: 85%; /* Orta konumda */
+  }
+  }
+  
+  /* TRAINERS SECTION */
+  
+  .section-title h2 {
+  text-align: center;
+  color: #355592;
+  padding-top:20px;
+  padding: 10px;
+  
+  }
+  
+  .section-title p {
+  text-align: center;
+  color: #333333;
+  padding:10px;
+  }
+  
+  
+  #trainers .container {
+  flex-direction: column;
+  padding: 20px 160px; 
+  background-color: rgb(237, 243, 250);
+  }
+  
+  #trainers .images {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-top: 30px;
+  }
+  
+  .img-container {
+  position: relative;
+  display: inline-block;
+  
+  /* Hover olduğunda çizgilerin tam çerçeve oluşturması */
+  &:hover {
+      .outer-frame {
+          &::after{
+              width: 80%;
+              left: 24px;
+              right: 24px;
+          }
+      }
+      .outer-frame .side.left {
+          height: 50%;
+          bottom: 16px;
+      }
+      .outer-frame .side.right {
+          height: 50%;
+          bottom: 16px;
+      }
+      .img-content {
+          bottom: 16px;
+          opacity: 1;
+      }
+  }
+  }
+  
+  .img-container img {
+  width: 300px;
+  height: 350px;
+  border: 2px solid #f39f15;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .outer-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 350px;
+  border: none;
+  
+  &::before,&::after {
+      content: '';
+      position: absolute;
+      background-color:#355592;
+      transition: all 0.5s ease;
+  }
+  }
+  
+  /* Üst çizgi */
+  .outer-frame::before {
+  width: 80px;
+  height: 8px;
+  top: -8px;
+  left: calc(50% - 40px);
+  }
+  
+  /* Alt çizgi*/
+  .outer-frame::after {
+  width: 80px;
+  height: 8px;
+  bottom: -8px;
+  left: calc(50% - 40px);
+  }
+  
+  /*sol ve sağ çizgiler için side ile konum ve renk tanımlaması*/
+  .outer-frame .side {
+  position: absolute;
+  background-color:#355592;
+  transition: all 0.5s ease;
+  }
+  
+  /* Sol ve sağ çizgi */
+  .outer-frame .side.left {
+  width: 8px;
+  height: 120px;
+  left: -8px;
+  top: calc(50% - 60px);
+  }
+  
+  .outer-frame .side.right {
+  width: 8px;
+  height: 120px;
+  right: -8px;
+  top: calc(50% - 60px);
+  }
+  
+  .img-content {
+  color:#e5e7eb;
+  position: absolute;
+  left: 16px;
+  width: 268px;
+  bottom: 0;
+  padding: 24px 8px;
+  text-align: center;
+  background-color:#355592;
+  clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+  opacity: 0;
+  transition: all 250ms linear;
+  }
+  
+  .img-content p {
+  color:#fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-top: 8px;
+  }
+  
+  /* 576px'den küçük ekranlar için stil ayarları */
+  @media (max-width: 576px) {
+  #trainers .container {
+    padding: 20px 20px; /* Yan boşlukları azaltın */
+  }
+  
+  .section-title {
+    text-align: center; /* Başlığı ortala */
+    padding: 10px; /* Yukarı ve aşağıda boşluk ekle */
+  }
+  
+  .section-title h2 {
+    font-size: 24px; /* Başlık boyutunu azalt */
+  }
+  
+  .section-title p {
+    font-size: 14px; /* Açıklama boyutunu azalt */
+  }
+  
+  #trainers .images {
+    flex-direction: column; /* Alt alta sıralama için dikey yönlendirme */
+    align-items: center; /* Ortalamak için */
+  }
+  
+  .img-container {
+    margin: 10px 0; /* Yukarı ve aşağıda boşluk ekle */
+  }
+  
+  .img-container img {
+    width: 100%; /* Resmi konteynerin genişliğine göre ayarla */
+    height: auto; /* Yüksekliği otomatik ayarla */
+  }
+  }
+  /* PURCHASE SECTION */
+  
+  #purchase {
+  padding-top: 20px;;
+  }
+  .card-images {
+  display: flex;
+  flex-wrap: wrap; /* Eğer kartlar ekran genişliğine sığmazsa alt satıra geçmeleri için */
+  gap: 20px; /* Kartlar arasında boşluk bırakmak için */
+  justify-content: center; /* Kartları ortalamak için */
+  margin: 10px;
+  }
+  
+  .purchase-container {
+  border: 1px solid #ddd;
+  width: 200px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); /* Gölge eklenmesi */
+  transition: box-shadow 0.3s ease; /* Hover'da geçiş efekti */
+  }
+  
+  .purchase-container:hover {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3); /* Hover'da daha da yaygın gölge */
+  }
+  
+  .purchase-container img {
+  width: 100%;
+  height: auto;
+  }
+  
+  .purchase-container h4 {
+  margin: 1px;
+  }
+  
+  .purchase-container h6 {
+  font-size: 12px;
+  }
+  
+  .purchase-container h6 span {
+  text-decoration: line-through; /* Eski fiyatı üstü çizili göstermek için */
+  }
+  
+  .cart {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding: 15px;
+  }
+  
+  .cart i {
+  font-size: smaller;
+  padding-top: 2px;
+  }
+  
+  /* Responsive stil ayarları */
+  @media (max-width: 576px) {
+  .card-images {
+    flex-direction: column; /* Kartlar alt alta yerleştirilecek */
+    align-items: center; /* Kartların ortalanması */
+  }
+  
+  .purchase-container {
+    width: 80%; /* Kart genişliğini artır */
+    margin: 10px auto; /* Otomatik margin ile ortalama */
+  }
+  }
+  /* Purchase end */
+  
+  /* REVIEW CLIENT SECTION */
+  
+  #review {
+  display: flex;
+  flex-wrap: wrap; /* Eğer kartlar ekran genişliğine sığmazsa alt satıra geçmeleri için */
+  gap: 20px; /* Kartlar arasında boşluk bırakmak için */
+  justify-content: center; /* Kartları ortalamak için */
+  margin: 10px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  margin-left: 20px;
+  }
+  
+  .review-container {
+  background-color: rgb(237, 243, 250);
+  position: relative; 
+  padding-bottom: 50px;
+  width: 100%; /* Tam genişlik */
+  }
+  
+  .client {
+  display: flex;
+  align-items: center;  
+  width: 100%; /* Genişliği tam olsun */
+  }
+  
+  .client-image {
+  width: 50px; /* Resmin genişliği */
+  height: 50px; /* Resmin yüksekliği */
+  border-radius: 50%; /* Resmi yuvarlak yap */
+  margin-right: 10px; /* Resim ile metin arasında boşluk */
+  }
+  
+  .client-info {
+  display: flex; /* H4 ve H6'yi yan yana hizalar */
+  flex-direction: column; /* Dikey hizalama yapar */
+  align-items: flex-start; 
+  }
+  
+  .client-info h4, h6 {
+  margin: 0; /* Varsayılan marginleri kaldır */
+  
+  }
+  
+  .client-info h6 {
+  color:#555353;
+  }
+  
+  .client-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Aradaki boşlukları artırdım */
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  }
+  
+  .reviewer {
+  
+  display: flex;
+  flex-direction: column; /* Alt alta dizilsin */
+  align-items: center; /* İçerikleri yatayda ortala */
+  text-align: center; /* Metni de ortala */
+  width: 45%; /* Daha kesin genişlik ayarladım */
+  }
+  
+  .comment {
+  position: relative;
+  width: 100%; /* P öğesinin genişliğini tam yap */
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #355592;
+  }
+  
+  .border {
+  position:absolute;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  top: 100%;
+  left: 0px;
+  width: 50px;
+  height: 30px;
+  z-index: 2;
+  background-color:#7788a8;
+  
+  }
+  
+  .mirror-border {
+  position:absolute;
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  top: 100%;
+  right:  0px;
+  width: 50px;
+  height: 30px;
+  z-index: 2;
+  background-color:#7788a8;
+  }
+  
+  @media (max-width: 576px) {
+  .client-container {
+    flex-direction: column; /* Client öğelerini alt alta diz */
+  }
+  
+  .reviewer {
+    width: 100%; /* Tam genişlikte olsun */
+    padding-bottom: 15px;
+  }
+  
+  
+  }
+  /* Contact Us */
+  .map-form-container {
+  display: flex; /* İki ana öğeyi yan yana yerleştir */
+  justify-content: center; /* Ortalar */
+  align-items: flex-start; /* Üst kısımda hizala */
+  gap: 30px; /* Öğeler arasında boşluk bırak */
+  padding: 20px; /* İçerik için padding */
+  }
+  
+  .contact-info {
+  display: flex;
+  flex-direction: column; /* Öğeleri dikey olarak hizala */
+  }
+  
+  .contact-item {
+  display: flex;
+  justify-content: flex-start; /* İki h4 öğesini yan yana yerleştir */
+  
+  }
+  
+  .contact-item h4 {
+  margin: 5px;   
+  }
+  
+  .contact-item span {
+  color:#333333;
+  font-size: 12px;
+  }
+  
+  .contact-info input, textarea {
+  margin: 10px 0; /* Input ve textarea'lar için margin ekle */
+  padding: 10px; /* İçerik için padding */
+  width: 100%; /* Tüm genişliği kapla */
+  box-sizing: border-box; /* Padding dahil genişliği hesapla */
+  background-color: rgb(237, 243, 250);
+  border: none;
+  }
+  
+  .map {
+  display: flex; /* Harita için flexbox kullan */
+  height: 320px; /* Yüksekliği otomatik ayarlansın */
+  
+  }
+  
+  /* Responsive tasarım için 576px'den küçük ekranlar için stil ekleme */
+  @media (max-width: 576px) {
+  .map-form-container {
+    flex-direction: column; /* Dikey hizalama */
+    align-items: stretch; /* Öğelerin genişliği tam olsun */
+  }
+  
+  .contact-item {
+    flex-direction: row; /* H4 öğelerini yan yana hizala */
+    justify-content: space-between; /* Eşit aralıkla yerleştir */
+    margin-bottom: 20px; /* Altında boşluk bırak */
+  }
+  
+  .contact-item h4 {
+    flex: 1; /* Eşit alan kaplaması için */
+    margin: 0px; /* Sağ ve sol taraftan boşluk bırak */
+  }
+  
+  .contact-info h2 {
+    margin: 10px 0; /* H2 için boşluk ekle */
+  }
+  
+  .contact-info input,
+  .contact-info textarea {
+    margin-top: 10px; /* Yukarıdan boşluk bırak */
+  }
+  }
+  
+  /* FOOTER SECTION */
+  
+  .footer {
+  display: flex; /* Yana yana düzenlemek için flex kullan */
+  flex-direction: column; /* Önce yukarıdan aşağıya, sonra yana doğru yerleştir */
+  padding: 20px; /* İçerik için padding */
+  background-color:#355592; /* Arka plan rengi */
+  border-top: 1px solid #ddd; /* Üstte ince bir çizgi */
+  }
+  
+  .logo {
+  max-width: 150px; /* Logonun maksimum genişliği */
+  height: auto; /* Orantılı yükseklik */
+  }
+  
+  .footer-logo p {
+    max-width: 800px; /* Paragrafın maksimum genişliğini ayarla */
+    margin: 0 auto; /* Paragrafı ortala */
+    line-height: 1.5; /* Satır yüksekliğini ayarla */
+    font-size: 14px; /* İsteğe bağlı olarak yazı boyutunu ayarla */
+    color:white;
+    font-weight: lighter;
+    padding: 5px;
+  }
+  
+  .footer-links {
+  display: flex; /* Link listelerini yan yana yerleştir */
+  justify-content:space-evenly; 
+  
+  }
+  
+  .link-list {
+  list-style-type: none; /* Noktaları kaldır */
+  padding: 5px; 
+  }
+  
+  .link-list li {
+  margin: 5px 0; /* Her bir linkin arasında boşluk */
+  }
+  
+  .link-list a {
+  text-decoration: none; /* Alt çizgiyi kaldır */
+  color:white; /* Link rengi */
+  font-weight: 400; /* İnce font */
+  }
+  
+  .link-list a:hover {
+  text-decoration: underline; /* Üzerine gelindiğinde altı çizili */
+  }
+  
+  .link-section h2 {
+  color:white;
+  font-size: large;
+  padding-bottom: 2px;
+  }
+  
+  /* 576px ve altındaki düzenlemeler */
+  @media (max-width: 576px) {
+  .footer {
+      align-items: flex-start; /* Tüm içeriği sola hizala */
+  }
+  
+  .footer-logo {
+      justify-content: flex-start; /* Logo kısmını sola hizala */
+      width: 100%; /* Tam genişlik */
+  }
+  
+  .footer-logo img {
+    justify-content: flex-start;
+    width: 40%;
+    margin: 0;
+  }
+  
+  .footer-links {
+      display: flex; /* Link listelerini yan yana yerleştir */
+      flex-direction: row; /* Linkleri alt alta hizala */
+      align-items: flex-start; /* Solda hizala */
+      gap: 20px; /* Bölümler arasında boşluk bırak */
+      width: 100%; /* Tam genişlik */
+  }
+  }
