@@ -1,12 +1,34 @@
-# React + Vite
+ # 🎲 Dice Game App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ 
+ ## 📌 Proje Açıklaması
 
-Currently, two official plugins are available:
+Bu proje, React kullanılarak geliştirilmiş basit bir zar atma oyunudur. Oyuncu 1 kullanıcı tarafından yönetilir, Player 2 ise bilgisayardır. Her atışta zarlar rastgele döner ve kazanan, kaybeden veya beraberlik durumu belirlenir.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Özellikler
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* 👤 Player 1 kullanıcı tarafından adlandırılabilir.
+
+* 🖥 Player 2 (PC) sabit bir rakip olarak belirlenmiştir.
+
+* 🎲 Gerçekçi zar atma animasyonu (3 saniye boyunca zar yüzleri sürekli değişir).
+
+* 🏆 Kazananın belirlenmesi: Daha yüksek zar atan kazanır.
+
+* 🔄 Sonuca göre buton güncellenmesi (zar atılırken "Rolling..." yazısı görünür).
+
+* 🎨 Şık ve kullanıcı dostu arayüz.
+
+---
+
+## 📷 Ekran Görüntüsü
+
+
+
+https://github.com/user-attachments/assets/c1ea5b1c-d83d-461a-b9b3-ac8d3f67bb8d
+
+
+
+
