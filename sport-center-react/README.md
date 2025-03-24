@@ -1,12 +1,30 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🏋️‍♂️ Sport Center - React Projesi
 
-Currently, two official plugins are available:
+## 📌 Proje Açıklaması
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Bu proje, haftalık olarak yapılan Sport Center uygulamasının React kütüphanesi ile yeniden geliştirilmiş versiyonudur. Projede her section ayrı bir component olarak ele alınmış ve her section en az 3 alt bileşen (component) ile oluşturulmuştur. Sayfanın işlevselliği ve tasarım özellikleri korunarak modern ve modüler bir yapı sağlanmıştır.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Özellikler
+
+* 📌 Her bölüm ayrı bir React Component olarak oluşturuldu
+
+* 🛠 Her section içinde en az 3 alt bileşen kullanıldı
+
+* 🎨 Tasarım sadık kalınarak modernleştirildi
+
+* 🔄 Sayfa işlevselliği tamamen korunarak optimize edildi
+  
+*  ⚡ Hızlı, performanslı ve dinamik bir kullanıcı deneyimi sağlandı
+
+  ---
+
+## 📷 Ekran Görüntüsü
+
+
+https://github.com/user-attachments/assets/b34203e0-3d07-4cb7-ba10-bc3847ad8f88
+
+
+
