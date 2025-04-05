@@ -1,0 +1,93 @@
+body {
+  margin: 0; /* Sayfanın varsayılan dış boşluklarını (margin) kaldırır. Tarayıcılar, sayfa elemanlarına varsayılan olarak belirli bir dış boşluk uygularlar. Bu satır, bu boşlukları sıfırlar. */
+  padding: 0; /* Sayfanın varsayılan iç boşluklarını (padding) kaldırır. Tarayıcılar, sayfa elemanlarına varsayılan olarak belirli bir iç boşluk uygularlar. Bu satır, bu boşlukları sıfırlar. */
+  background-color: #f0f0f0; /* Sayfanın arka plan rengini açık gri (#f0f0f0) olarak ayarlar. Bu, not uygulamasının etrafındaki alanı doldurur. */
+  min-height: 100vh; /* Sayfanın minimum yüksekliğini görünüm penceresinin (viewport) yüksekliğine (100vh) ayarlar. Bu, sayfanın içeriği az olsa bile arka plan renginin tüm ekranı kaplamasını sağlar. */
+  display: flex; /* Flexbox düzenini kullanarak sayfa elemanlarını düzenler. Bu, elemanların daha kolay hizalanmasını ve dağıtılmasını sağlar. */
+  justify-content: center; /* Flexbox'ta elemanları yatayda ortalar. Bu, not uygulamasının ekranın yatay ortasında konumlanmasını sağlar. */
+  align-items: center; /* Flexbox'ta elemanları dikeyde ortalar. Bu, not uygulamasının ekranın dikey ortasında konumlanmasını sağlar. */
+}
+
+.notes-app {
+  font-family: sans-serif; /* Metinlerin yazı tipini sans-serif olarak ayarlar. Bu, daha modern ve okunaklı bir görünüm sağlar. */
+  text-align: center; /* İçeriği yatayda ortalar. Bu, not uygulamasının içindeki metinlerin ortalanmasını sağlar. */
+  padding: 20px; /* Not uygulamasının iç içeriği ile kenarları arasında 20 piksellik iç boşluk bırakır. Bu, içeriğin kenarlara yapışık görünmesini engeller. */
+  background-color: white; /* Not uygulamasının arka plan rengini beyaza ayarlar. */
+  border-radius: 10px; /* Not uygulamasının köşelerini 10 piksellik yarıçapta yuvarlar. Bu, daha yumuşak bir görünüm sağlar. */
+  width: 80%; /* Not uygulamasının genişliğini görünüm penceresinin genişliğinin %80'i olarak ayarlar. Bu, not uygulamasının farklı ekran boyutlarında uygun şekilde görüntülenmesini sağlar. */
+  margin: 20px auto; /* Not uygulamasının üst ve altında 20 piksellik dış boşluk bırakır ve yatayda otomatik olarak ortalar. Bu, not uygulamasının ekranın ortasında konumlanmasını sağlar. */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Not uygulamasına hafif bir gölge efekti ekler. Bu, derinlik hissi verir. */
+}
+
+.search-bar {
+  margin-bottom: 20px; /* Arama çubuğunun altında 20 piksellik dış boşluk bırakır. Bu, arama çubuğu ile not giriş alanı arasında boşluk oluşturur. */
+}
+
+.search-bar input {
+  padding: 10px; /* Arama çubuğunun iç içeriği ile kenarları arasında 10 piksellik iç boşluk bırakır. Bu, metnin kenarlara yapışık görünmesini engeller. */
+  width: 300px; /* Arama çubuğunun genişliğini 300 piksel olarak ayarlar. Bu, arama çubuğunun belirli bir genişlikte görüntülenmesini sağlar. */
+  border: 1px solid #ccc; /* Arama çubuğunun kenarlığını 1 piksel kalınlığında, gri (#ccc) renkte ve düz çizgi olarak ayarlar. */
+  border-radius: 20px; /* Arama çubuğunun köşelerini 20 piksellik yarıçapta yuvarlar. Bu, daha yuvarlak bir görünüm sağlar. */
+}
+
+.new-note {
+  display: flex; /* Flexbox düzenini kullanarak not giriş alanını düzenler. Bu, elemanların daha kolay hizalanmasını ve dağıtılmasını sağlar. */
+  flex-direction: column; /* Flexbox'ta elemanları dikey sütun şeklinde düzenler. Bu, metin alanı, renk seçici ve butonun alt alta sıralanmasını sağlar. */
+  align-items: center; /* Flexbox'ta elemanları yatayda ortalar. Bu, elemanların ortalanmasını sağlar. */
+  margin-bottom: 20px; /* Not giriş alanının altında 20 piksellik dış boşluk bırakır. Bu, not giriş alanı ile not listesi arasında boşluk oluşturur. */
+}
+
+.new-note textarea {
+  width: 500px; /* Metin alanının genişliğini 500 piksel olarak ayarlar. */
+  height: 100px; /* Metin alanının yüksekliğini 100 piksel olarak ayarlar. */
+  padding: 10px; /* Metin alanının iç içeriği ile kenarları arasında 10 piksellik iç boşluk bırakır. */
+  border: 1px solid #ccc; /* Metin alanının kenarlığını 1 piksel kalınlığında, gri renkte ve düz çizgi olarak ayarlar. */
+  border-radius: 5px; /* Metin alanının köşelerini 5 piksellik yarıçapta yuvarlar. */
+  margin-bottom: 10px; /* Metin alanının altında 10 piksellik dış boşluk bırakır. Bu, metin alanı ile renk seçici arasında boşluk oluşturur. */
+}
+
+.new-note button {
+  padding: 10px 20px; /* Butonun iç içeriği ile kenarları arasında 10 piksel üst/alt, 20 piksel sağ/sol iç boşluk bırakır. */
+  background-color: #4caf50; /* Butonun arka plan rengini yeşil (#4caf50) olarak ayarlar. */
+  color: white; /* Butonun metin rengini beyaz olarak ayarlar. */
+  border: none; /* Butonun kenarlığını kaldırır. */
+  border-radius: 5px; /* Butonun köşelerini 5 piksellik yarıçapta yuvarlar. */
+  cursor: pointer; /* Fare imlecini el şeklinde (pointer) ayarlar, butonun tıklanabilir olduğunu gösterir. */
+}
+
+.notes {
+  display: flex; /* Flexbox düzenini kullanarak not listesini düzenler. */
+  justify-content: center; /* Flexbox'ta elemanları yatayda ortalar. */
+  flex-wrap: wrap; /* Elemanlar sığmadığında alt satıra geçmelerini sağlar. Bu, notların farklı ekran boyutlarında uygun şekilde görüntülenmesini sağlar. */
+}
+
+.note {
+  padding: 10px 20px; /* Notların iç içeriği ile kenarları arasında 10 piksel üst/alt, 20 piksel sağ/sol iç boşluk bırakır. */
+  margin: 10px; /* Notlar arasında 10 piksellik dış boşluk bırakır. */
+  border-radius: 5px; /* Notların köşelerini 5 piksellik yarıçapta yuvarlar. */
+  min-width: 100px; /* Notların minimum genişliğini 100 piksel olarak ayarlar. */
+  display: flex; /* Flexbox düzenini kullanarak not içeriğini düzenler. */
+  justify-content: space-between; /* Flexbox'ta elemanları yatayda eşit aralıklarla yerleştirir. Bu, not metni ile butonların arasına boşluk bırakır. */
+  align-items: center; /* Flexbox'ta elemanları dikeyde ortalar. */
+}
+
+.color-picker {
+  display: flex; /* Flexbox düzenini kullanarak renk seçiciyi düzenler. */
+  justify-content: center; /* Flexbox'ta elemanları yatayda ortalar. */
+  margin-bottom: 10px; /* Renk seçicinin altında 10 piksellik dış boşluk bırakır. */
+}
+
+.color-option {
+  width: 20px; /* Renk seçeneği dairelerinin genişliğini 20 piksel olarak ayarlar. */
+  height: 20px; /* Renk seçeneği dairelerinin yüksekliğini 20 piksel olarak ayarlar. */
+  border-radius: 50%; /* Renk seçeneği dairelerini yuvarlak yapar. */
+  margin: 5px; /* Renk seçeneği daireleri arasında 5 piksellik dış boşluk bırakır. */
+  cursor: pointer; /* Fare imlecini el şeklinde (pointer) ayarlar, renk seçeneği dairelerinin tıklanabilir olduğunu gösterir. */
+}
+
+.selected-color {
+  width: 20px; /* Seçilen renk dairelerinin genişliğini 20 piksel olarak ayarlar. */
+  height: 20px; /* Seçilen renk dairelerinin yüksekliğini 20 piksel olarak ayarlar. */
+  border-radius: 50%; /* Seçilen renk dairelerini yuvarlak yapar. */
+  margin: 5px; /* Seçilen renk daireleri arasında 5 piksellik dış boşluk bırakır. */
+}

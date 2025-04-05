@@ -1,0 +1,133 @@
+/* Genel sayfa ayarları */
+body {
+  font-family: 'Arial', sans-serif; /* Yazı tipi belirleniyor */
+  background-color: #f0f0f0; /* Arka plan rengi */
+  color: #333; /* Metin rengi */
+  margin: 0;
+  padding: 20px;
+  text-align: center; /* Metinlerin ortalanması */
+}
+
+/* Bill Gates görselinin stili */
+img.bill {
+  border-radius: 50%; /* Yuvarlak resim yapma */
+  width: 100px;
+  height: 100px;
+}
+
+/* Başlık (h1) için stil */
+h1 {
+  text-align: center;
+  color: #007bff; /* Mavi renk */
+}
+
+/* Alt başlıklar (h2) için stil */
+h2 {
+  text-align: center;
+  color: #555; /* Koyu gri renk */
+}
+
+/* Bakiye göstergesi */
+h2.balance {
+  width: 100%;
+  position: sticky; /* Sayfanın üst kısmına sabitleme */
+  top: 0; /* Yukarı sabitleme */
+  background-color: #28a745; /* Yeşil arka plan */
+  color: white; /* Beyaz yazı rengi */
+  padding: 15px 0;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 1000; /* Diğer öğelerin üstünde olmasını sağlama */
+}
+
+/* Ürün kartlarını içeren kapsayıcı */
+.product-container {
+  display: flex;
+  flex-wrap: wrap; /* Ekran küçüldüğünde ürünlerin alt alta gelmesini sağlar */
+  justify-content: space-between;; /* Ürünleri ortalar */
+  margin-top: 20px;
+}
+
+/* Ürün kartlarının stili */
+.product-card {
+  width: 30%; /* Her satırda 3 ürün olacak şekilde ayarla */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px 0; /* Ürünler arasında dikey boşluk bırak */
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center; /* İçerikleri ortala */
+}
+
+/* Ürün kartı üzerine gelindiğinde büyüme efekti */
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+/* Ürün resimlerinin stili */
+.product-card img {
+  width: 100%; /* Kartın genişliğine sığdır */
+  height: auto; /* Orijinal en-boy oranını koru */
+  max-height: 150px; /* Çok büyük resimleri sınırlandır */
+  object-fit: contain; /* Resmin bozulmasını önle */
+  border-radius: 5px;
+  
+}
+
+/* "Buy" ve "Sell" butonlarının yan yana gelmesi için grup */
+.button-group {
+  display: flex;
+  justify-content: space-between; /* Butonları iki uçta konumlandırır */
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Genel buton stili */
+button {
+  background-color: #28a745; /* Yeşil renk */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  width: 45%; /* Butonların yan yana durmasını sağlamak için genişlik belirlenir */
+  transition: background-color 0.2s; /* Renk geçiş efekti */
+}
+
+/* Butonun üzerine gelindiğinde renk değişimi */
+button:hover {
+  background-color: #218838;
+}
+
+/* Kullanılamayan butonun stili */
+button:disabled {
+  background-color: #ccc; /* Gri renk */
+  cursor: not-allowed; /* İşaretçiyi engelli göster */
+}
+
+/* Ürün miktar giriş alanı */
+input {
+  width: 30px;
+  text-align: center; /* Sayı giriş alanının içeriğini ortalar */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Satın alınan ürünler listesinin kapsayıcısı */
+div.purchased {
+  text-align: start; /* Sol hizalı */
+}
+
+/* Satın alınan ürünlerin listesinin genel ayarları */
+ul {
+  padding-left: 45%; /* Listeleri ortalamaya yardımcı olur */
+}
+
+/* Satın alınan ürünler listesi elemanları */
+li {
+  font-size: 24px;
+  font-weight: 600;
+  color: #007bff; /* Mavi renk */
+}
