@@ -38,19 +38,4 @@ Her bir görevi ekleyebilir, güncelleyebilir, tamamlayabilir ya da silebilirsin
 - 🧩 React Hooks (useState, useEffect)
   ---
 
-## 📦 Kurulum ve Çalıştırma
 
-Projeyi klonladıktan sonra terminalde aşağıdaki adımları izleyin:
-
-```bash
-# Repoyu klonla
-git clone https://github.com/kullanici-adiniz/todo-list-react.git
-
-# Proje klasörüne gir
-cd todo-list-react
-
-# Bağımlılıkları yükle
-npm install
-
-# Uygulamayı başlat
-npm start
