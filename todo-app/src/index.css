@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ecf0f1; /* Açık gri bir arka plan */
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Öğeleri dikey sıralamak için */
+  align-items: center;
+  min-height: 100vh;
+}
+
+.todo-container {
+  width: 90%;
+  max-width: 500px;
+  background-color: #fff; /* Beyaz bir konteyner arka planı */
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px; /* Alt boşluk ekledim */
+}
+
+h1 {
+  text-align: center;
+  color: #34495e; /* Koyu gri bir başlık rengi */
+  margin-bottom: 25px;
+}
+
+.add-todo {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.add-todo input {
+  flex-grow: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #bdc3c7;
+  border-radius: 6px;
+}
+
+.add-todo button {
+  padding: 12px 15px;
+  font-size: 16px;
+  background-color: #3498db; /* Canlı mavi ekle butonu */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-todo button:hover {
+  background-color: #2980b9; /* Hover rengi */
+}
+
+.todo-list {
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.todo-item.completed {
+  background-color: #f0fff0; /* Tamamlanmış öğe arka planı */
+}
+
+.todo-item-content {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.status-emoji {
+  font-size: 1.2em;
+  margin-right: 5px;
+  cursor: pointer; /* Emojilere tıklanabilir özelliği ekle */
+}
+
+.status-emoji.complete {
+  color: #2ecc71; /* Yeşil tik rengi */
+}
+
+.status-emoji.incomplete {
+  color: #e74c3c; /* Kırmızı çarpı rengi */
+}
+
+.todo-text {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.delete-btn, .edit-btn {
+  background-color: #e74c3c; /* Kırmızı sil ve güncelle butonları */
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover, .edit-btn:hover {
+  background-color: #c0392b; /* Hover rengi */
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin-top: 25px;
+  width: 100%;
+  justify-content: center; /* Filtre butonlarını ortala */
+}
+
+.filter-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #f39c12; /* Turuncu filtre butonları */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #e67e22; /* Hover rengi */
+}
+
+.filter-button.delete-completed {
+  background-color: #c0392b; /* Kırmızı tamamlanmışları sil butonu */
+}
+
+.filter-button.delete-completed:hover {
+  background-color: #a93226; /* Hover rengi */
+}
