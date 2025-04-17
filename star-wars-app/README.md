@@ -1,12 +1,60 @@
-# React + Vite
+# 🌌🚀 Star Wars Yıldız Gemileri Uygulaması
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, [Star Wars API](https://swapi.dev/) kullanılarak React ile geliştirilmiş bir yıldız gemisi listesi uygulamasıdır. Kullanıcılar yıldız gemilerini görüntüleyebilir, filtreleyebilir, detaylarını görebilir ve daha fazlasını yükleyebilir. ✨
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧩 Özellikler
 
-## Expanding the ESLint configuration
+- 📜 Yıldız gemilerini listeleme
+- 🔍 Ada veya modele göre arama yapma
+- 📄 Detay sayfasında gemi bilgilerini görüntüleme
+- ➕ “Daha Fazla” butonu ile yeni gemiler yükleme
+- 🧠 React ve Hooks ile hızlı ve modern kullanıcı deneyimi
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🖼️ Ekran Görüntüsü
+
+![star1](https://github.com/user-attachments/assets/e55ebb2d-5eb4-4ace-b338-86e15d2219e5)
+
+
+---
+
+## 🚀 Kullanılan Teknolojiler
+
+- ⚛️ React
+- 🎯 React Router DOM
+- 🛰️ Star Wars API (SWAPI)
+- 💅 CSS / Stil bileşenleri
+
+---
+
+## ⚙️ Özelliklerin Detayı
+
+### 🔍 Arama Özelliği
+- Kullanıcı, tek bir arama çubuğuyla yıldız gemisinin **adı** veya **modeli**ne göre arama yapabilir.
+
+### 📋 Listeleme
+- Her gemi kartında şu bilgiler bulunur:
+  - Ad 🛸
+  - Model ⚙️
+  - Hız 🚀
+
+### 📄 Detay Sayfası
+Kullanıcı, bir yıldız gemisine tıkladığında aşağıdaki bilgileri içeren detay sayfasına yönlendirilir:
+- Ad
+- Model
+- Yolcu sayısı
+- Atmosferdeki maksimum hız
+- Üretici
+- Mürettebat
+- Kargo kapasitesi
+
+🧭 Kullanıcı detay sayfasından ana listeye kolayca dönebilir.
+
+### ➕ Daha Fazla Yükleme
+“Daha Fazla” butonuyla API üzerinden sıradaki yıldız gemileri alınarak listeye eklenir.
+
+---
+
